@@ -92,14 +92,14 @@ public class Welcome extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 int option = JOptionPane.showConfirmDialog(null,"¿Quiere realizar la acción?");
                 if(option==0){
-                    JOptionPane.showMessageDialog(null,"SI");
+                    JOptionPane.showMessageDialog(null,option);
                 }
                 else if (option==1)
                 {
-                    JOptionPane.showMessageDialog(null,"NO");
+                    JOptionPane.showMessageDialog(null,"Me pulsaron el NO");
                 }
                 else {
-                    JOptionPane.showMessageDialog(null, "Cancelar");
+                    JOptionPane.showMessageDialog(null, option);
                 }
             }
         });
