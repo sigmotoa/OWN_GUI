@@ -50,7 +50,7 @@ private JButton johann;
         txt2.setPreferredSize(textDimen);
         txt3.setPreferredSize(textDimen);
 
-        panel1.setPreferredSize(new Dimension(200, 300));
+        panel1.setPreferredSize(new Dimension(300, 400));
         btn1.addActionListener(new ActionListener() {
             int touchTimes = 1;
             String name;
@@ -105,6 +105,14 @@ private JButton johann;
                 else {
                     JOptionPane.showMessageDialog(null, option);
                 }
+            }
+        });
+        johann.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                String codigo;
+                codigo=JOptionPane.showInputDialog(null,"ingrese codigo");
             }
         });
     }
