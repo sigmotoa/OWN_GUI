@@ -15,6 +15,8 @@ public class Welcome extends JFrame {
     private JButton btn4;
     private JTextField txt3;
 
+private JButton johann;
+
 
     private Dimension textDimen = new Dimension(100, 30);
 
@@ -31,6 +33,7 @@ public class Welcome extends JFrame {
         btn2 = new JButton("Error");
         btn3 = new JButton("Mensajes");
         btn4 = new JButton("Opciones");
+        johann = new JButton("Johann");
 
         btn1.setText("Tocame");
         panel1.add(txt1);
@@ -40,6 +43,7 @@ public class Welcome extends JFrame {
         panel1.add(btn2);
         panel1.add(btn3);
         panel1.add(btn4);
+        panel1.add(johann);
 
         this.setContentPane(panel1);
         txt1.setPreferredSize(textDimen);
